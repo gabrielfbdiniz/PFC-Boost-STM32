@@ -12216,12 +12216,12 @@
 			(uuid "fee8da82-bf44-4eae-81f4-fd4657c15b67")
 		)
 		(embedded_fonts no)
-						(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3.step"
+						(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L41.5mm_W11.0mm_P37.50mm_MKS4.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 1.666667 1 1)
+				(xyz 0.666667 1 0.5)
 			)
 			(rotate
 				(xyz 0 0 0)
@@ -16931,7 +16931,7 @@
 		)
 												(model "${KIPRJMOD}/3d/Blue Pill STM32.step"
 			(offset
-				(xyz -19.05 24.13 8.5)
+				(xyz -19.05 26.67 11.5)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -17827,12 +17827,12 @@
 			(uuid "857ddb12-3b95-4d1d-8d73-8e9746c65038")
 		)
 		(embedded_fonts no)
-						(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3.step"
+						(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L41.5mm_W11.0mm_P37.50mm_MKS4.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 1.666667 1 1)
+				(xyz 0.666667 1 0.5)
 			)
 			(rotate
 				(xyz 0 0 0)
