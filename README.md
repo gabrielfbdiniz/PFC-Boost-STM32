@@ -40,7 +40,7 @@ flowchart LR
     end
 
     subgraph PFC_Stage["Estágio Boost PFC (Alta Tensão)"]
-        BRIDGE -->|V_in retificada| L["Indutor Boost L1"]
+        BRIDGE -->|"V_in retificada"| L["Indutor Boost L1"]
         L --> Q["MOSFET Q3"]
         L --> D["Diodo Boost D15"]
         D --> COUT["Banco Capacitivo (380V DC)"]
@@ -50,19 +50,19 @@ flowchart LR
     subgraph Hardware_Protection["Proteção Hardware OCP"]
         SHUNT --> COMP["Comparador Rápido (LMV7219)"]
         COMP --> LATCH["Latch SR (74HC00)"]
-        LATCH -->|Hard-Trip Inibição| AND_GATE["Porta AND (74LVC1G08)"]
+        LATCH -->|"Hard-Trip Inibição"| AND_GATE["Porta AND (74LVC1G08)"]
         AND_GATE --> DRIVER["Gate Driver TC4427"]
         DRIVER --> Q
     end
 
     subgraph MCU_Control["Controle Digital (STM32 Blue Pill)"]
-        COUT -.->|Sensoriamento Vout (ADC)| MCU["STM32F103C8T6"]
-        BRIDGE -.->|Sensoriamento Vin (ADC)| MCU
-        SHUNT -.->|Sensoriamento IL (ADC)| MCU
-        MCU -->|PWM Alta Frequência| AND_GATE
-        MCU -->|RESET_OC| LATCH
-        MCU -->|ENABLE Geral| AND_GATE
-        MCU -->|Comando Relés| INRUSH
+        COUT -.->|"Sensoriamento Vout (ADC)"| MCU["STM32F103C8T6"]
+        BRIDGE -.->|"Sensoriamento Vin (ADC)"| MCU
+        SHUNT -.->|"Sensoriamento IL (ADC)"| MCU
+        MCU -->|"PWM Alta Frequência"| AND_GATE
+        MCU -->|"RESET_OC"| LATCH
+        MCU -->|"ENABLE Geral"| AND_GATE
+        MCU -->|"Comando Relés"| INRUSH
     end
 ```
 
