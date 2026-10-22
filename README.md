@@ -177,5 +177,16 @@ kicad-cli sch export pdf -o docs/PFC_380V_Schematic.pdf power-supply.kicad_sch
 
 ## 📜 7. Licença & Créditos
 
-Projeto desenvolvido por **Gabriel Diniz**.  
+### Autores & Desenvolvedores
+* **Abílio Davi**
+* **Gabriel Diniz**
+* **Vinicius Moreira**
+
+### Orientação
+* **Professor Colombo**
+* **Professor Eduardo Lenz**
+
+---
+
+### Licença
 Distribuído sob a licença **CERN-OHL-S v2** (*CERN Open Hardware Licence Strongly Reciprocal*). Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
