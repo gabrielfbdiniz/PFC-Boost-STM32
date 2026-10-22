@@ -1,4 +1,4 @@
-# ⚡ AC-DC 380V Active Boost PFC Converter
+# AC-DC 380V Active Boost PFC Converter
 
 ![KiCad Version](https://img.shields.io/badge/KiCad-10.0-blue.svg)
 ![Target MCU](https://img.shields.io/badge/MCU-STM32F103C8T6%20(Blue%20Pill)-red.svg)
@@ -13,7 +13,7 @@ O controle digital de malha fechada (tensão e corrente em modo de condução co
 
 ---
 
-## 📸 Renderizações 3D do Projeto
+## Renderizações 3D do Projeto
 
 | Vista Superior (Top View) | Vista Inferior (Bottom View) |
 | :---: | :---: |
@@ -25,7 +25,7 @@ O controle digital de malha fechada (tensão e corrente em modo de condução co
 
 ---
 
-## 🧭 1. Visão Geral da Arquitetura do Conversor
+## 1. Visão Geral da Arquitetura do Conversor
 
 O sistema é dividido em três blocos funcionais modulares conforme o esquemático hierárquico:
 1. **Low Frequency Rectifier & Inrush (`lf_rectifier`):** Ponte retificadora de entrada, relé de bypass de inrush (`RELAY_INRUSH`) e relé mestre de ligamento (`RELAY_ON_OFF`).
@@ -68,7 +68,7 @@ flowchart LR
 
 ---
 
-## 📊 2. Especificações Técnicas
+## 2. Especificações Técnicas
 
 | Parâmetro | Valor / Faixa | Observações |
 | :--- | :--- | :--- |
@@ -85,7 +85,7 @@ flowchart LR
 
 ---
 
-## 🔌 3. Pinout & Mapeamento do Microcontrolador (STM32 Blue Pill)
+## 3. Pinout & Mapeamento do Microcontrolador (STM32 Blue Pill)
 
 O mapeamento de pinos foi otimizado para conferir **máxima imunidade eletromagnética**, separando sinais analógicos de medição de ruídos digitais de chaveamento e garantindo roteamento direto para os conectores.
 
@@ -118,7 +118,7 @@ O mapeamento de pinos foi otimizado para conferir **máxima imunidade eletromagn
 
 ---
 
-## 🛡️ 4. Circuitos de Proteção e Segurança em Hardware
+## 4. Circuitos de Proteção e Segurança em Hardware
 
 1. **Proteção Ultrarrápida de Sobrecorrente (Hardware Trip):**
    * Em conversores boost, sobrecorrentes na chave podem queimar semicondutores em microssegundos.
@@ -132,7 +132,7 @@ O mapeamento de pinos foi otimizado para conferir **máxima imunidade eletromagn
 
 ---
 
-## 📁 5. Estrutura do Repositório
+## 5. Estrutura do Repositório
 
 ```text
 ├── power-supply.kicad_pro      # Arquivo de gerenciamento do projeto KiCad 10
@@ -155,7 +155,7 @@ O mapeamento de pinos foi otimizado para conferir **máxima imunidade eletromagn
 
 ---
 
-## 🚀 6. Como Abrir e Validar o Projeto
+## 6. Como Abrir e Validar o Projeto
 
 ### Pré-requisitos
 * **KiCad EDA 10.0+** instalado no sistema.
@@ -175,7 +175,7 @@ kicad-cli sch export pdf -o docs/PFC_380V_Schematic.pdf power-supply.kicad_sch
 
 ---
 
-## 📜 7. Licença & Créditos
+## 7. Licença & Créditos
 
 ### Autores & Desenvolvedores
 * **Abílio Davi**
