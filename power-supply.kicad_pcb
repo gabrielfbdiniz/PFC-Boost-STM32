@@ -1902,7 +1902,18 @@
 			(thermal_bridge_angle 45)
 			(uuid "27556981-d7d7-45d8-a365-392828f876b9")
 		)
-		(embedded_fonts no)
+				(model "${KICAD10_3DMODEL_DIR}/Transformer_THT.3dshapes/Transformer_Breve_TEZ-28x33.step"
+			(offset
+				(xyz -10 -10 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 		(layer "F.Cu")
@@ -12205,12 +12216,12 @@
 			(uuid "fee8da82-bf44-4eae-81f4-fd4657c15b67")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3.step"
+						(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1.666667 1 1)
 			)
 			(rotate
 				(xyz 0 0 0)
@@ -16918,6 +16929,18 @@
 				(xyz 0 0 0)
 			)
 		)
+												(model "${KIPRJMOD}/3d/Blue Pill STM32.step"
+			(offset
+				(xyz -19.05 24.13 8.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
+
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -17804,12 +17827,12 @@
 			(uuid "857ddb12-3b95-4d1d-8d73-8e9746c65038")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3.step"
+						(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L18.0mm_W11.0mm_P15.00mm_FKS3_FKP3.step"
 			(offset
 				(xyz 0 0 0)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1.666667 1 1)
 			)
 			(rotate
 				(xyz 0 0 0)
