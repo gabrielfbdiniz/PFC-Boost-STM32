@@ -1,0 +1,25 @@
+# KiCad files
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-bak
+*.bak
+*.bck
+*.kicad_prl
+*.lck
+~*
+
+# Backups and History
+power-supply-backups/
+.history/
+*.zip
+
+# Python caches and temporary scripts
+__pycache__/
+*.py[cod]
+*$py.class
+scratch/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

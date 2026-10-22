@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "MyAmpOps")(type "KiCad")(uri "${KIPRJMOD}/lib/MyAmpOps.kicad_sym")(options "")(descr ""))
-  (lib (name "MyTransformers")(type "KiCad")(uri "${KIPRJMOD}/lib/MyTransformers.kicad_sym")(options "")(descr ""))
-)
