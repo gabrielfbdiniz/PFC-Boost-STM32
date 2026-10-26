@@ -2933,6 +2933,16 @@
 		)
 		(uuid "600bcbce-58b8-46b4-8fbf-0e6e8102cc9c")
 	)
+	(text "Isolamento do MCU?\nTrilha do U1C\n\n"
+		(exclude_from_sim no)
+		(at 187.706 147.828 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "627c9dc8-5c6d-42b1-8ab9-2de6eab13300")
+	)
 	(text "Encoder with button"
 		(exclude_from_sim no)
 		(at 130.302 189.484 0)
@@ -2973,6 +2983,16 @@
 		)
 		(uuid "d99236e3-6680-4c2a-ae3d-a5a42fefa60f")
 	)
+	(text "PB1 -> PB6\n"
+		(exclude_from_sim no)
+		(at 26.416 31.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dee422ce-3335-4e35-9826-d555a60d76c8")
+	)
 	(text "BLACK"
 		(exclude_from_sim no)
 		(at 250.19 114.3 0)
@@ -2994,6 +3014,17 @@
 			(justify left bottom)
 		)
 		(uuid "e8ee1f6b-dcd7-4dd8-9b6b-8d1ce9e1f71e")
+	)
+	(text " PB5 -> PA11\n PB4 -> PA9\n PB3 -> PB15\nPA15 -> PB13"
+		(exclude_from_sim no)
+		(at 121.158 173.228 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ecc9c436-fa4e-4b27-b479-c22567834d17")
 	)
 	(junction
 		(at 180.34 29.21)
@@ -4033,7 +4064,7 @@
 		)
 		(uuid "feb739df-0988-4236-b673-471f3d10f6e2")
 	)
-	(label "PB8"
+	(label "PB11"
 		(at 34.29 24.13 0)
 		(effects
 			(font
@@ -4113,7 +4144,7 @@
 		)
 		(uuid "30a3ec1c-7e40-4a53-8144-e6bff86bcec6")
 	)
-	(label "PB15"
+	(label "PA15"
 		(at 115.57 165.1 0)
 		(effects
 			(font
@@ -4133,7 +4164,7 @@
 		)
 		(uuid "3664fbfa-9f66-4154-a8c0-962fa42ff7af")
 	)
-	(label "PB12"
+	(label "PB8"
 		(at 215.9 106.68 0)
 		(effects
 			(font
@@ -4163,7 +4194,7 @@
 		)
 		(uuid "3c3ff530-398f-4838-8320-793ab4b78a58")
 	)
-	(label "PA10"
+	(label "PB5"
 		(at 115.57 154.94 0)
 		(effects
 			(font
@@ -4203,7 +4234,7 @@
 		)
 		(uuid "6cc1a1c1-e66b-4017-9241-64fc440dacdf")
 	)
-	(label "PA5"
+	(label "PB0"
 		(at 34.29 34.29 0)
 		(effects
 			(font
@@ -4233,7 +4264,7 @@
 		)
 		(uuid "782b3e81-9e25-4f04-be54-a83d655dd329")
 	)
-	(label "PA6"
+	(label "PB1"
 		(at 34.29 31.75 0)
 		(effects
 			(font
@@ -4353,7 +4384,7 @@
 		)
 		(uuid "b40b6ea7-cb3b-47fb-b89d-83dfaf220c33")
 	)
-	(label "PA8"
+	(label "PB3"
 		(at 115.57 160.02 0)
 		(effects
 			(font
@@ -4363,7 +4394,7 @@
 		)
 		(uuid "b424f45a-25cc-4d31-a6bc-01d72107465e")
 	)
-	(label "PA11"
+	(label "PA2"
 		(at 34.29 29.21 0)
 		(effects
 			(font
@@ -4373,7 +4404,7 @@
 		)
 		(uuid "b637717e-8837-467e-b198-7cad363a06e1")
 	)
-	(label "PB13"
+	(label "PB9"
 		(at 215.9 109.22 0)
 		(effects
 			(font
@@ -4393,7 +4424,7 @@
 		)
 		(uuid "c7da88cd-03db-4a46-a4a7-25f05a0e0b2c")
 	)
-	(label "PB7"
+	(label "PB10"
 		(at 34.29 26.67 0)
 		(effects
 			(font
@@ -4402,16 +4433,6 @@
 			(justify left bottom)
 		)
 		(uuid "ca7aa682-0a09-4416-9628-61b96d6556ea")
-	)
-	(label "PB5"
-		(at 34.29 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cee4b293-8e88-438a-a440-06d4d4439611")
 	)
 	(label "PB13"
 		(at 27.94 132.08 0)
@@ -4432,16 +4453,6 @@
 			(justify left bottom)
 		)
 		(uuid "ddb7d1d4-d1a2-4804-a5e7-5277c9f2706e")
-	)
-	(label "PA15"
-		(at 34.29 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e04fa920-877a-47f3-a023-e403bcac61df")
 	)
 	(label "PA5"
 		(at 59.69 154.94 0)
@@ -4483,7 +4494,7 @@
 		)
 		(uuid "f9332786-d170-4394-88b8-f1777561b08b")
 	)
-	(label "PA9"
+	(label "PB4"
 		(at 115.57 157.48 0)
 		(effects
 			(font
@@ -4493,7 +4504,7 @@
 		)
 		(uuid "fc5254cc-6e24-4583-9a6e-e4283bff04d1")
 	)
-	(label "PB14"
+	(label "PB12"
 		(at 26.67 99.06 0)
 		(effects
 			(font

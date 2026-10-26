@@ -4325,7 +4325,7 @@
 		(uuid "fde70baa-d543-4e33-a5cf-1bfa7e21806b")
 	)
 	(no_connect
-		(at 262.89 25.4)
+		(at 261.62 26.67)
 		(uuid "055cd2d0-3ac3-4e81-a5ec-b5f6dabfeff0")
 	)
 	(no_connect
@@ -4333,11 +4333,11 @@
 		(uuid "833fadfd-8047-4964-a860-bbf448e940e1")
 	)
 	(no_connect
-		(at 262.89 20.32)
+		(at 261.62 21.59)
 		(uuid "c0480437-662d-4cfd-a14f-98d3ead618ca")
 	)
 	(no_connect
-		(at 278.13 22.86)
+		(at 276.86 24.13)
 		(uuid "c2d370e0-f1bd-475f-aca1-82b89425ccf0")
 	)
 	(wire
@@ -7194,122 +7194,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HC00")
-		(at 139.7 102.87 0)
-		(unit 4)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "03b3e653-abd2-4296-b507-6cf8c44eb944")
-		(property "Reference" "U5"
-			(at 139.6917 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC00"
-			(at 139.6917 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 139.7 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 139.7 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "quad 2-input NAND gate"
-			(at 139.7 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93e149b7-452e-4435-975d-52f6f7917904")
-		)
-		(pin "3"
-			(uuid "26a29b46-19c4-4acd-945b-5909664221e0")
-		)
-		(pin "2"
-			(uuid "0e32edb2-0b1c-45c7-8b8e-f67777b8b0eb")
-		)
-		(pin "9"
-			(uuid "cbd26d50-50e4-4006-bf14-e7e3f8ce014c")
-		)
-		(pin "4"
-			(uuid "93d1c67d-1a6a-43c5-bdb6-0eaf811c2710")
-		)
-		(pin "8"
-			(uuid "c5c07f57-f135-4e00-92d1-4af9a21f418a")
-		)
-		(pin "14"
-			(uuid "2b0500ae-d58c-4b53-a59d-58a7f313ff15")
-		)
-		(pin "11"
-			(uuid "0fd7e8a6-d040-4213-aac8-43961d9df466")
-		)
-		(pin "10"
-			(uuid "66c57967-42aa-4da2-a9ed-47589f6b924e")
-		)
-		(pin "13"
-			(uuid "e03cdf8e-f001-4210-bf23-e4342e12264f")
-		)
-		(pin "6"
-			(uuid "f519b73f-a65c-4a9f-b023-c0bc3e595eac")
-		)
-		(pin "7"
-			(uuid "0bb88270-7a37-4d3c-b485-b56852778aa2")
-		)
-		(pin "5"
-			(uuid "c3b084cf-c283-44bd-ac61-65bf4081009e")
-		)
-		(pin "12"
-			(uuid "a4e508e8-4918-4ce9-897a-75bf7e72fed3")
-		)
-		(instances
-			(project "power-supply"
-				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
-					(reference "U5")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:LM324")
 		(at 129.54 152.4 0)
 		(unit 1)
@@ -8188,122 +8072,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HC00")
-		(at 139.7 115.57 0)
-		(mirror x)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1a370119-afed-493b-8a63-04aaaa8be6c8")
-		(property "Reference" "U5"
-			(at 139.7 124.206 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC00"
-			(at 139.6917 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 139.7 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 139.7 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "quad 2-input NAND gate"
-			(at 139.7 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93e149b7-452e-4435-975d-52f6f7917903")
-		)
-		(pin "3"
-			(uuid "26a29b46-19c4-4acd-945b-5909664221df")
-		)
-		(pin "2"
-			(uuid "0e32edb2-0b1c-45c7-8b8e-f67777b8b0ea")
-		)
-		(pin "9"
-			(uuid "c27f46f6-15ce-4bb2-8e20-6fcd96966aaf")
-		)
-		(pin "4"
-			(uuid "93d1c67d-1a6a-43c5-bdb6-0eaf811c270f")
-		)
-		(pin "8"
-			(uuid "a54aefee-c9f3-4409-bb04-39a821a2922e")
-		)
-		(pin "14"
-			(uuid "2b0500ae-d58c-4b53-a59d-58a7f313ff14")
-		)
-		(pin "11"
-			(uuid "222e4fd6-1092-4b8a-8be0-28ccd1a4e349")
-		)
-		(pin "10"
-			(uuid "1e43bd87-1717-4395-b823-f876f9fbb0b7")
-		)
-		(pin "13"
-			(uuid "507cbffb-dd16-4da6-a3c8-266f650cb6b7")
-		)
-		(pin "6"
-			(uuid "f519b73f-a65c-4a9f-b023-c0bc3e595eab")
-		)
-		(pin "7"
-			(uuid "0bb88270-7a37-4d3c-b485-b56852778aa1")
-		)
-		(pin "5"
-			(uuid "c3b084cf-c283-44bd-ac61-65bf4081009d")
-		)
-		(pin "12"
-			(uuid "514bf682-c13b-451f-8b6f-4b97d9bc01ae")
-		)
-		(instances
-			(project "power-supply"
-				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
-					(reference "U5")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 60.96 58.42 0)
 		(mirror y)
@@ -8797,6 +8565,122 @@
 				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
 					(reference "#PWR028")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC00")
+		(at 139.7 115.57 0)
+		(mirror x)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2768a140-4148-403d-b333-06916f6288b4")
+		(property "Reference" "U5"
+			(at 139.6917 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC00"
+			(at 139.6917 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 139.7 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 139.7 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 139.7 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93e149b7-452e-4435-975d-52f6f7917901")
+		)
+		(pin "3"
+			(uuid "26a29b46-19c4-4acd-945b-5909664221dd")
+		)
+		(pin "2"
+			(uuid "0e32edb2-0b1c-45c7-8b8e-f67777b8b0e8")
+		)
+		(pin "9"
+			(uuid "cbd26d50-50e4-4006-bf14-e7e3f8ce0149")
+		)
+		(pin "4"
+			(uuid "93d1c67d-1a6a-43c5-bdb6-0eaf811c270d")
+		)
+		(pin "8"
+			(uuid "c5c07f57-f135-4e00-92d1-4af9a21f4187")
+		)
+		(pin "14"
+			(uuid "2b0500ae-d58c-4b53-a59d-58a7f313ff12")
+		)
+		(pin "11"
+			(uuid "222e4fd6-1092-4b8a-8be0-28ccd1a4e347")
+		)
+		(pin "10"
+			(uuid "66c57967-42aa-4da2-a9ed-47589f6b924b")
+		)
+		(pin "13"
+			(uuid "507cbffb-dd16-4da6-a3c8-266f650cb6b5")
+		)
+		(pin "6"
+			(uuid "f519b73f-a65c-4a9f-b023-c0bc3e595ea9")
+		)
+		(pin "7"
+			(uuid "0bb88270-7a37-4d3c-b485-b56852778a9f")
+		)
+		(pin "5"
+			(uuid "c3b084cf-c283-44bd-ac61-65bf4081009b")
+		)
+		(pin "12"
+			(uuid "514bf682-c13b-451f-8b6f-4b97d9bc01ac")
+		)
+		(instances
+			(project "power-supply"
+				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
+					(reference "U5")
+					(unit 2)
 				)
 			)
 		)
@@ -11045,122 +10929,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HC00")
-		(at 93.98 118.11 0)
-		(mirror x)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "76d73e35-52d4-4764-98ab-245494d70853")
-		(property "Reference" "U5"
-			(at 93.9717 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC00"
-			(at 93.9717 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 93.98 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 93.98 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "quad 2-input NAND gate"
-			(at 93.98 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93e149b7-452e-4435-975d-52f6f7917901")
-		)
-		(pin "3"
-			(uuid "26a29b46-19c4-4acd-945b-5909664221dd")
-		)
-		(pin "2"
-			(uuid "0e32edb2-0b1c-45c7-8b8e-f67777b8b0e8")
-		)
-		(pin "9"
-			(uuid "cbd26d50-50e4-4006-bf14-e7e3f8ce0149")
-		)
-		(pin "4"
-			(uuid "e153649f-19e9-4f6b-943d-c0bb110cf556")
-		)
-		(pin "8"
-			(uuid "c5c07f57-f135-4e00-92d1-4af9a21f4187")
-		)
-		(pin "14"
-			(uuid "2b0500ae-d58c-4b53-a59d-58a7f313ff12")
-		)
-		(pin "11"
-			(uuid "222e4fd6-1092-4b8a-8be0-28ccd1a4e347")
-		)
-		(pin "10"
-			(uuid "66c57967-42aa-4da2-a9ed-47589f6b924b")
-		)
-		(pin "13"
-			(uuid "507cbffb-dd16-4da6-a3c8-266f650cb6b5")
-		)
-		(pin "6"
-			(uuid "2fb9f2cc-3c44-4e99-89c1-b3285b76990f")
-		)
-		(pin "7"
-			(uuid "0bb88270-7a37-4d3c-b485-b56852778a9f")
-		)
-		(pin "5"
-			(uuid "b6aa29de-65cd-423e-a05a-bd36e30d8a16")
-		)
-		(pin "12"
-			(uuid "514bf682-c13b-451f-8b6f-4b97d9bc01ac")
-		)
-		(instances
-			(project "power-supply"
-				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
-					(reference "U5")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 120.65 73.66 180)
 		(unit 1)
@@ -11330,122 +11098,6 @@
 			(project "power-supply"
 				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74HC00")
-		(at 270.51 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "848d6359-3636-428b-a252-a12b3703a046")
-		(property "Reference" "U5"
-			(at 270.5017 13.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC00"
-			(at 270.5017 16.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 270.51 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 270.51 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "quad 2-input NAND gate"
-			(at 270.51 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7d20218d-949f-4485-a708-28e8c15ff850")
-		)
-		(pin "3"
-			(uuid "c8a2350d-e9e0-4f42-ae54-35eec87abf39")
-		)
-		(pin "2"
-			(uuid "19780b2d-3261-47f6-8bcd-637c5b1120ac")
-		)
-		(pin "9"
-			(uuid "cbd26d50-50e4-4006-bf14-e7e3f8ce014a")
-		)
-		(pin "4"
-			(uuid "93d1c67d-1a6a-43c5-bdb6-0eaf811c270e")
-		)
-		(pin "8"
-			(uuid "c5c07f57-f135-4e00-92d1-4af9a21f4188")
-		)
-		(pin "14"
-			(uuid "2b0500ae-d58c-4b53-a59d-58a7f313ff13")
-		)
-		(pin "11"
-			(uuid "222e4fd6-1092-4b8a-8be0-28ccd1a4e348")
-		)
-		(pin "10"
-			(uuid "66c57967-42aa-4da2-a9ed-47589f6b924c")
-		)
-		(pin "13"
-			(uuid "507cbffb-dd16-4da6-a3c8-266f650cb6b6")
-		)
-		(pin "6"
-			(uuid "f519b73f-a65c-4a9f-b023-c0bc3e595eaa")
-		)
-		(pin "7"
-			(uuid "0bb88270-7a37-4d3c-b485-b56852778aa0")
-		)
-		(pin "5"
-			(uuid "c3b084cf-c283-44bd-ac61-65bf4081009c")
-		)
-		(pin "12"
-			(uuid "514bf682-c13b-451f-8b6f-4b97d9bc01ad")
-		)
-		(instances
-			(project "power-supply"
-				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
-					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -13341,6 +12993,122 @@
 		)
 	)
 	(symbol
+		(lib_id "74xx:74HC00")
+		(at 139.7 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d98ee76b-895d-4ba1-9d4b-ca7a9d587a41")
+		(property "Reference" "U5"
+			(at 139.6917 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC00"
+			(at 139.6917 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 139.7 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 139.7 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 139.7 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93e149b7-452e-4435-975d-52f6f7917902")
+		)
+		(pin "3"
+			(uuid "26a29b46-19c4-4acd-945b-5909664221de")
+		)
+		(pin "2"
+			(uuid "0e32edb2-0b1c-45c7-8b8e-f67777b8b0e9")
+		)
+		(pin "9"
+			(uuid "cbd26d50-50e4-4006-bf14-e7e3f8ce014a")
+		)
+		(pin "4"
+			(uuid "93d1c67d-1a6a-43c5-bdb6-0eaf811c270e")
+		)
+		(pin "8"
+			(uuid "c5c07f57-f135-4e00-92d1-4af9a21f4188")
+		)
+		(pin "14"
+			(uuid "2b0500ae-d58c-4b53-a59d-58a7f313ff13")
+		)
+		(pin "11"
+			(uuid "222e4fd6-1092-4b8a-8be0-28ccd1a4e348")
+		)
+		(pin "10"
+			(uuid "66c57967-42aa-4da2-a9ed-47589f6b924c")
+		)
+		(pin "13"
+			(uuid "507cbffb-dd16-4da6-a3c8-266f650cb6b6")
+		)
+		(pin "6"
+			(uuid "f519b73f-a65c-4a9f-b023-c0bc3e595eaa")
+		)
+		(pin "7"
+			(uuid "0bb88270-7a37-4d3c-b485-b56852778aa0")
+		)
+		(pin "5"
+			(uuid "c3b084cf-c283-44bd-ac61-65bf4081009c")
+		)
+		(pin "12"
+			(uuid "514bf682-c13b-451f-8b6f-4b97d9bc01ad")
+		)
+		(instances
+			(project "power-supply"
+				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Comparator:LMV7219M5")
 		(at 62.23 118.11 0)
 		(unit 1)
@@ -13675,6 +13443,121 @@
 		)
 	)
 	(symbol
+		(lib_id "74xx:74HC00")
+		(at 93.98 118.11 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f69290f5-71f7-4112-920e-f475e517682a")
+		(property "Reference" "U5"
+			(at 93.98 109.474 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC00"
+			(at 93.9717 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 93.98 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 93.98 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 93.98 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93e149b7-452e-4435-975d-52f6f7917903")
+		)
+		(pin "3"
+			(uuid "26a29b46-19c4-4acd-945b-5909664221df")
+		)
+		(pin "2"
+			(uuid "0e32edb2-0b1c-45c7-8b8e-f67777b8b0ea")
+		)
+		(pin "9"
+			(uuid "cbd26d50-50e4-4006-bf14-e7e3f8ce014b")
+		)
+		(pin "4"
+			(uuid "93d1c67d-1a6a-43c5-bdb6-0eaf811c270f")
+		)
+		(pin "8"
+			(uuid "c5c07f57-f135-4e00-92d1-4af9a21f4189")
+		)
+		(pin "14"
+			(uuid "2b0500ae-d58c-4b53-a59d-58a7f313ff14")
+		)
+		(pin "11"
+			(uuid "222e4fd6-1092-4b8a-8be0-28ccd1a4e349")
+		)
+		(pin "10"
+			(uuid "66c57967-42aa-4da2-a9ed-47589f6b924d")
+		)
+		(pin "13"
+			(uuid "507cbffb-dd16-4da6-a3c8-266f650cb6b7")
+		)
+		(pin "6"
+			(uuid "f519b73f-a65c-4a9f-b023-c0bc3e595eab")
+		)
+		(pin "7"
+			(uuid "0bb88270-7a37-4d3c-b485-b56852778aa1")
+		)
+		(pin "5"
+			(uuid "c3b084cf-c283-44bd-ac61-65bf4081009d")
+		)
+		(pin "12"
+			(uuid "514bf682-c13b-451f-8b6f-4b97d9bc01ae")
+		)
+		(instances
+			(project "power-supply"
+				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
+					(reference "U5")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 259.08 143.51 90)
 		(mirror x)
@@ -13750,6 +13633,122 @@
 				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
 					(reference "C28")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC00")
+		(at 269.24 24.13 0)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa4d3dbc-d40e-415c-9ff1-fc6a313d049e")
+		(property "Reference" "U5"
+			(at 269.2317 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC00"
+			(at 269.2317 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 269.24 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 269.24 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 269.24 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93e149b7-452e-4435-975d-52f6f7917904")
+		)
+		(pin "3"
+			(uuid "26a29b46-19c4-4acd-945b-5909664221e0")
+		)
+		(pin "2"
+			(uuid "0e32edb2-0b1c-45c7-8b8e-f67777b8b0eb")
+		)
+		(pin "9"
+			(uuid "cbd26d50-50e4-4006-bf14-e7e3f8ce014c")
+		)
+		(pin "4"
+			(uuid "93d1c67d-1a6a-43c5-bdb6-0eaf811c2710")
+		)
+		(pin "8"
+			(uuid "c5c07f57-f135-4e00-92d1-4af9a21f418a")
+		)
+		(pin "14"
+			(uuid "2b0500ae-d58c-4b53-a59d-58a7f313ff15")
+		)
+		(pin "11"
+			(uuid "9c536324-8c1c-499a-bb08-ca3d657da17c")
+		)
+		(pin "10"
+			(uuid "66c57967-42aa-4da2-a9ed-47589f6b924e")
+		)
+		(pin "13"
+			(uuid "82ac3e34-eddb-466d-9522-b432ccb56f66")
+		)
+		(pin "6"
+			(uuid "f519b73f-a65c-4a9f-b023-c0bc3e595eac")
+		)
+		(pin "7"
+			(uuid "0bb88270-7a37-4d3c-b485-b56852778aa2")
+		)
+		(pin "5"
+			(uuid "c3b084cf-c283-44bd-ac61-65bf4081009e")
+		)
+		(pin "12"
+			(uuid "91e5ebda-0b59-4251-9a2e-ff71ccd1d81a")
+		)
+		(instances
+			(project "power-supply"
+				(path "/7202e823-25ba-4b77-8a88-a38eb2bf69b9/47c705e2-9088-4a27-a91b-eda0316a0f42"
+					(reference "U5")
+					(unit 4)
 				)
 			)
 		)
