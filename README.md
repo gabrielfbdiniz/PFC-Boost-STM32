@@ -135,20 +135,26 @@ O mapeamento de pinos foi otimizado para conferir **máxima imunidade eletromagn
 ## 5. Estrutura do Repositório
 
 ```text
-├── power-supply.kicad_pro      # Arquivo de gerenciamento do projeto KiCad 10
-├── power-supply.kicad_sch      # Esquemático principal (Top-Level Sheet)
-├── power-supply.kicad_pcb      # Layout e roteamento completo da placa de circuito impresso
-├── lf_rectifier.kicad_sch      # Sub-folha: Retificação de baixa frequência e inrush
-├── pfc.kicad_sch               # Sub-folha: Estágio Boost PFC de 380V e circuitos de proteção
-├── mcu.kicad_sch               # Sub-folha: Módulo MCU Blue Pill e conexões de IHM
+├── 3d/                         # Modelos CAD 3D dos componentes (STEP / WRL)
+│   ├── Capacitor_THT_L28.0mm_W11.0mm_P25.00mm.step # Modelo 3D dos capacitores C11 e C12
+│   ├── Inductor_NEE-30-15-15.step                  # Modelo 3D do indutor boost L1 (NEE-30)
+│   └── ...                     # Modelos adicionais (STM32 Blue Pill, bornes, conectores)
 ├── docs/
-│   └── PFC_380V_Schematic.pdf  # Esquemático completo exportado em PDF vetorial
-├── renders/                    # Renders 3D fotorrealistas em alta resolução
+│   ├── PFC_380V_Schematic.pdf  # Esquemático completo exportado em PDF vetorial
+│   └── pfc_control_comparison.png # Gráficos comparativos da simulação de controle
+├── renders/                    # Renders 3D fotorrealistas em alta resolução (1080p)
 │   ├── render_top.png
 │   ├── render_bottom.png
 │   ├── render_iso_top.png
 │   └── render_iso_bottom.png
-├── .gitignore                  # Filtro para temporários, caches e arquivos de backup KiCad
+├── lf_rectifier.kicad_sch      # Sub-folha: Retificação de baixa frequência e inrush
+├── mcu.kicad_sch               # Sub-folha: Módulo MCU Blue Pill e conexões de IHM
+├── pfc.kicad_sch               # Sub-folha: Estágio Boost PFC de 380V e circuitos de proteção
+├── power-supply.kicad_pcb      # Layout e roteamento completo da placa de circuito impresso
+├── power-supply.kicad_pro      # Arquivo de gerenciamento do projeto KiCad 10
+├── power-supply.kicad_sch      # Esquemático principal (Top-Level Sheet)
+├── simulate_pfc_control.py     # Simulação do conversor e comparação de malhas de controle
+├── .gitignore                  # Filtro para temporários, caches e backups do KiCad/Python
 ├── LICENSE                     # Licença de Hardware Aberto CERN-OHL-S v2
 └── README.md                   # Documentação técnica de engenharia
 ```
