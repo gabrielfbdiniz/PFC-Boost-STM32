@@ -8,8 +8,10 @@
 *.lck
 ~*
 
-# Backups and History
+# KiCad Backups and History
 power-supply-backups/
+hardware/power-supply-backups/
+**/power-supply-backups/
 .history/
 *.zip
 
@@ -18,6 +20,23 @@ __pycache__/
 *.py[cod]
 *$py.class
 scratch/
+
+# Firmware build outputs (STM32CubeIDE / GCC ARM / Eclipse)
+firmware/**/Debug/
+firmware/**/Release/
+firmware/Debug/
+firmware/Release/
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.su
+*.o
+*.d
+*.launch
+.metadata/
 
 # OS generated files
 .DS_Store

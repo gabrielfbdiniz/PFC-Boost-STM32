@@ -87,36 +87,32 @@ flowchart LR
 
 ## 3. Pinout & Mapeamento do Microcontrolador (STM32 Blue Pill)
 
-O mapeamento de pinos foi otimizado para conferir **máxima imunidade eletromagnética**, separando sinais analógicos de medição de ruídos digitais de chaveamento e garantindo roteamento direto para os conectores.
+O mapeamento de pinos reflete as conexões reais implementadas nas folhas esquemáticas em [`hardware/`](hardware/) e roteadas na placa de circuito impresso:
 
-### Conector Esquerdo (`J7` - Lado do Driver, Relés e Interface)
-
-| Pino Blue Pill | Sinal Associado | Função no Hardware | Descrição / Operação |
-| :--- | :--- | :--- | :--- |
-| **`PB12`** | `I2C_SCL` | I2C Clock (Software Bit-Bang) | Clock do barramento serial do display |
-| **`PB13`** | `I2C_SDA` | I2C Data (Software Bit-Bang) | Dados do barramento serial do display |
-| **`PB14`** | `FAN_ON_OFF` | GPIO Output | Comando do transistor de controle do ventilador |
-| **`PB15`** | `ENC_ENABLE` | GPIO | Pino 5 do conector frontal do painel / Encoder (`J2`) |
-| **`PA8`** | `ENC_BUTTON`| GPIO Input (Pull-up) | Botão de seleção/clique do encoder rotativo |
-| **`PA9`** | `ENC_B` | GPIO Input / EXTI | Canal B de quadratura do encoder rotativo |
-| **`PA10`** | `ENC_A` | GPIO Input / EXTI | Canal A de quadratura do encoder rotativo |
-| **`PA11`** | `PFC_PWM` | `TIM1_CH4` (PWM Timer 1) | Sinal modulado em largura de pulso de alta frequência |
-| **`PA12`** | `RESET_OC` | GPIO Output (Open-Drain/PP) | Pulso de reset para destravar o latch de sobrecorrente |
-| **`PB5`** | `ENABLE` | GPIO Output | Sinal mestre de habilitação de gate drive (para U6) |
-| **`PB7`** | `RELAY_INRUSH`| GPIO Output | Aciona o relé de limitação de corrente de partida |
-| **`PB8`** | `RELAY_ON_OFF`| GPIO Output | Aciona o relé principal de energização da rede |
-
-### Conector Direito (`J5` - Lado Exclusivo de Sensoriamento Analógico)
+### Pinos de Potência, Controle e Atuadores
 
 | Pino Blue Pill | Sinal Associado | Função no Hardware | Descrição / Operação |
 | :--- | :--- | :--- | :--- |
-| **`PB1` / `PA6`**| `PFC_VIN` | `ADC12_IN9` / `ADC12_IN6` | Sensoriamento da tensão senoidal retificada de entrada |
-| **`PB0` / `PA5`**| `PFC_VOUT`| `ADC12_IN8` / `ADC12_IN5` | Sensoriamento da alta tensão de saída estabilizada (380V) |
-| **`PA7`** | `PFC_IL` | `ADC12_IN7` | Sensoriamento analógico da corrente no indutor boost |
-| **`PA0` - `PA4`**| *Reservados* | `ADC12_IN0` a `ADC12_IN4` | Entradas analógicas livres para telemetria/sensores de temp. |
-| **`PC13`** | *LED Onboard* | GPIO Output | LED indicador de batimento de coração (*heartbeat*) |
+| **`PA2`** | `PFC_PWM` | `TIM2_CH3` | Sinal PWM de alta frequência (50 a 100 kHz) para comutação do MOSFET via gate driver |
+| **`PB10`** | `RELAY_INRUSH`| GPIO Output | Aciona o relé de limitação de corrente de partida (bypass do termistor NTC) |
+| **`PB11`** | `RELAY_ON_OFF`| GPIO Output | Aciona o relé principal de energização da rede CA |
+| **`PB12`** | `FAN_CTRL` | GPIO Output | Controle liga/desliga da ventoinha de refrigeração forçada |
+| **`PB8`** | `I2C1_SCL` | `I2C1` | Clock do barramento serial I2C (Display OLED 0.96" SSD1306) com pull-up de 4.7kΩ |
+| **`PB9`** | `I2C1_SDA` | `I2C1` | Dados do barramento serial I2C (Display OLED 0.96" SSD1306) com pull-up de 4.7kΩ |
+| **`PB3`** | `EXP_SCK` | `SPI1_SCK` / GPIO | Barramento de expansão frontal / Interface de usuário (`J2`) |
+| **`PB4`** | `EXP_MISO` | `SPI1_MISO` / GPIO | Barramento de expansão frontal / Interface de usuário (`J2`) |
+| **`PB5`** | `EXP_MOSI` | `SPI1_MOSI` / GPIO | Barramento de expansão frontal / Interface de usuário (`J2`) |
+| **`PA15`** | `EXP_CS` | GPIO Output | Chip-select para periféricos de expansão no conector `J2` |
 
----
+### Sensoriamento Analógico e Medição
+
+| Pino Blue Pill | Sinal Associado | Função no Hardware | Descrição / Operação |
+| :--- | :--- | :--- | :--- |
+| **`PA7`** | `PFC_IL` | `ADC1_IN7` | Sensoriamento analógico da corrente no indutor boost (amplificador de shunt) |
+| **`PB0`** | `PFC_VOUT`| `ADC1_IN8` | Sensoriamento da tensão de saída do barramento CC estabilizado (380V) |
+| **`PB1`** | `PFC_VIN` | `ADC1_IN9` | Sensoriamento da tensão senoidal retificada de entrada |
+| **`PC13`** | *LED Onboard* | GPIO Output | LED indicador de batimento cardíaco (*heartbeat*) e status operacional |
+| **`PA13`/`PA14`** | `SWD` | `SWDIO` / `SWCLK` | Interface de gravação e depuração em tempo real com ST-Link v2 |
 
 ## 4. Circuitos de Proteção e Segurança em Hardware
 
@@ -135,26 +131,30 @@ O mapeamento de pinos foi otimizado para conferir **máxima imunidade eletromagn
 ## 5. Estrutura do Repositório
 
 ```text
-├── 3d/                         # Modelos CAD 3D dos componentes (STEP / WRL)
-│   ├── Capacitor_THT_L28.0mm_W11.0mm_P25.00mm.step # Modelo 3D dos capacitores C11 e C12
-│   ├── Inductor_NEE-30-15-15.step                  # Modelo 3D do indutor boost L1 (NEE-30)
-│   └── ...                     # Modelos adicionais (STM32 Blue Pill, bornes, conectores)
-├── docs/
+├── hardware/                   # Projeto de Hardware no KiCad 10
+│   ├── 3d/                     # Modelos CAD 3D dos componentes (STEP / WRL)
+│   │   ├── Capacitor_THT_L28.0mm_W11.0mm_P25.00mm.step # Modelo 3D dos capacitores C11 e C12
+│   │   ├── Inductor_NEE-30-15-15.step                  # Modelo 3D do indutor boost L1 (NEE-30)
+│   │   └── ...                 # Modelos adicionais (STM32 Blue Pill, bornes, conectores)
+│   ├── lf_rectifier.kicad_sch  # Sub-folha: Retificação de baixa frequência e inrush
+│   ├── mcu.kicad_sch           # Sub-folha: Módulo MCU Blue Pill e conexões de IHM
+│   ├── pfc.kicad_sch           # Sub-folha: Estágio Boost PFC de 380V e circuitos de proteção
+│   ├── power-supply.kicad_pcb  # Layout e roteamento completo da PCB
+│   ├── power-supply.kicad_pro  # Arquivo de gerenciamento do projeto KiCad 10
+│   └── power-supply.kicad_sch  # Esquemático principal (Top-Level Sheet)
+├── firmware/                   # Firmware embarcado para STM32F103 (STM32CubeIDE 1.19)
+│   └── README.md               # Guia de configuração, pinout, FSM e arquitetura
+├── simulation/                 # Simulação computacional e controle
+│   └── simulate_pfc_control.py # Comparação de malhas de controle (Cascata Energia vs. Jacobiano)
+├── docs/                       # Documentação técnica e esquemáticos vetoriais
 │   ├── PFC_380V_Schematic.pdf  # Esquemático completo exportado em PDF vetorial
-│   └── pfc_control_comparison.png # Gráficos comparativos da simulação de controle
+│   └── pfc_control_comparison.png # Gráficos comparativos de controle
 ├── renders/                    # Renders 3D fotorrealistas em alta resolução (1080p)
 │   ├── render_top.png
 │   ├── render_bottom.png
 │   ├── render_iso_top.png
 │   └── render_iso_bottom.png
-├── lf_rectifier.kicad_sch      # Sub-folha: Retificação de baixa frequência e inrush
-├── mcu.kicad_sch               # Sub-folha: Módulo MCU Blue Pill e conexões de IHM
-├── pfc.kicad_sch               # Sub-folha: Estágio Boost PFC de 380V e circuitos de proteção
-├── power-supply.kicad_pcb      # Layout e roteamento completo da placa de circuito impresso
-├── power-supply.kicad_pro      # Arquivo de gerenciamento do projeto KiCad 10
-├── power-supply.kicad_sch      # Esquemático principal (Top-Level Sheet)
-├── simulate_pfc_control.py     # Simulação do conversor e comparação de malhas de controle
-├── .gitignore                  # Filtro para temporários, caches e backups do KiCad/Python
+├── .gitignore                  # Filtro para temporários, builds e caches
 ├── LICENSE                     # Licença de Hardware Aberto CERN-OHL-S v2
 └── README.md                   # Documentação técnica de engenharia
 ```
@@ -165,21 +165,26 @@ O mapeamento de pinos foi otimizado para conferir **máxima imunidade eletromagn
 
 ### Pré-requisitos
 * **KiCad EDA 10.0+** instalado no sistema.
+* **Python 3.10+** (com `numpy` e `matplotlib`) para as simulações numéricas.
+* **STM32CubeIDE 1.19** para o desenvolvimento do firmware.
 
 ### Regenerar Renderizações 3D (via Linha de Comando)
 ```bash
-kicad-cli pcb render -o renders/render_top.png --width 1920 --height 1080 --side top --quality high power-supply.kicad_pcb
-kicad-cli pcb render -o renders/render_bottom.png --width 1920 --height 1080 --side bottom --quality high power-supply.kicad_pcb
-kicad-cli pcb render -o renders/render_iso_top.png --width 1920 --height 1080 --rotate -45,0,45 --quality high power-supply.kicad_pcb
-kicad-cli pcb render -o renders/render_iso_bottom.png --width 1920 --height 1080 --side bottom --rotate -45,0,45 --quality high power-supply.kicad_pcb
+kicad-cli pcb render -o renders/render_top.png --width 1920 --height 1080 --side top --quality high hardware/power-supply.kicad_pcb
+kicad-cli pcb render -o renders/render_bottom.png --width 1920 --height 1080 --side bottom --quality high hardware/power-supply.kicad_pcb
+kicad-cli pcb render -o renders/render_iso_top.png --width 1920 --height 1080 --rotate -45,0,45 --quality high hardware/power-supply.kicad_pcb
+kicad-cli pcb render -o renders/render_iso_bottom.png --width 1920 --height 1080 --side bottom --rotate -45,0,45 --quality high hardware/power-supply.kicad_pcb
 ```
 
 ### Exportar Esquemático em PDF
 ```bash
-kicad-cli sch export pdf -o docs/PFC_380V_Schematic.pdf power-supply.kicad_sch
+kicad-cli sch export pdf -o docs/PFC_380V_Schematic.pdf hardware/power-supply.kicad_sch
 ```
 
----
+### Executar a Simulação Comparativa de Controle
+```bash
+python simulation/simulate_pfc_control.py
+```
 
 ## 7. Licença & Créditos
 

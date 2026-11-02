@@ -11,6 +11,7 @@ Parâmetros baseados no projeto de hardware 'Active Boost PFC 380V':
 - Potência Nominal: 500 W (degrau para 1000 W)
 """
 
+import os
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
@@ -349,7 +350,11 @@ def main():
     ax.legend(loc='upper right')
 
     plt.tight_layout()
-    output_path = 'docs/pfc_control_comparison.png'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    docs_dir = os.path.join(project_root, 'docs')
+    os.makedirs(docs_dir, exist_ok=True)
+    output_path = os.path.join(docs_dir, 'pfc_control_comparison.png')
     plt.savefig(output_path, dpi=200)
     print(f"Gráfico comparativo salvo com sucesso em: {output_path}")
 
